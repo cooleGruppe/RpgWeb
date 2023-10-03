@@ -1,8 +1,13 @@
+using Data;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionstring = builder.Configuration.GetConnectionString("Default");
 
 // Add services to the container.
+builder.Services.AddDbContext<WebRpgContext>(options =>
+		options.UseMySql(connectionstring, ServerVersion.AutoDetect(connectionstring)));
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

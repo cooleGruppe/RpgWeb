@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  webrpg.server:
+    image: ${DOCKER_REGISTRY-}webrpgserver
+    build:
+      context: .
+      dockerfile: Server/Dockerfile
+  db:
+     image: mysql:latest
+     container_name: webrpg
+     environment:
+       MYSQL_ROOT_PASSWORD: example
+       MYSQL_DATABASE: webrpg
+     volumes:
+         - webrpg-db:/var/lib/mysql
+     ports:
+         - 3306:3306
+  phpmyadmin:
+      image: phpmyadmin:latest
+      container_name: luminapath-phpmyadmin
+      ports:
+          - 8089:80
+      depends_on:
+          - db
+      environment:
+          PMA_HOST: db
+          PMA_PORT: 3306
+volumes:
+    webrpg-db:
