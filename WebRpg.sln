@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRpg.Server", "Server\WebRpg.Server.csproj", "{0BE6D024-DFCE-40B9-ACF9-75FD49B915F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRpg.Server", "Server\WebRpg.Server.csproj", "{0BE6D024-DFCE-40B9-ACF9-75FD49B915F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRpg.Client", "Client\WebRpg.Client.csproj", "{2AF70750-8A6F-4660-BED2-A23A03B93460}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRpg.Client", "Client\WebRpg.Client.csproj", "{2AF70750-8A6F-4660-BED2-A23A03B93460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRpg.Shared", "Shared\WebRpg.Shared.csproj", "{5AA9B114-36A7-4C94-BBB8-B520C0087BC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRpg.Shared", "Shared\WebRpg.Shared.csproj", "{5AA9B114-36A7-4C94-BBB8-B520C0087BC1}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{74139F90-2CFD-4300-B28B-86043C99923B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG", "RPG\RPG.csproj", "{E46E93D4-AB81-44CF-838D-3F3369D7C221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{74139F90-2CFD-4300-B28B-86043C99923B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74139F90-2CFD-4300-B28B-86043C99923B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74139F90-2CFD-4300-B28B-86043C99923B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46E93D4-AB81-44CF-838D-3F3369D7C221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46E93D4-AB81-44CF-838D-3F3369D7C221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46E93D4-AB81-44CF-838D-3F3369D7C221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46E93D4-AB81-44CF-838D-3F3369D7C221}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

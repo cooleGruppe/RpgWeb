@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RPG\RPG.csproj" />
     <ProjectReference Include="..\Shared\WebRpg.Shared.csproj" />
   </ItemGroup>
 

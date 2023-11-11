@@ -1,0 +1,29 @@
+﻿@page "/play"
+@using RPG
+@using RPG.Classes
+
+<PageTitle>WebRPG</PageTitle>
+
+<h1>WebRPG</h1>
+
+<div>
+    <div>
+        <h1>@Game.Player.Name</h1>
+        <h2>@Game.Player.HP</h2>
+    </div>
+    <div>
+        <h1>@Enemy.Name</h1>
+        <h2>@Enemy.HP</h2>
+    </div>
+    <button class="btn btn-primary" @onclick="Attack">Attack</button>
+</div>
+
+@code {
+    public Ork Enemy = new Ork("John Ork");
+    public Game Game = new Game(new Player("John Elden"));
+
+    private void Attack()
+    {
+        Game.Attack(Enemy);
+    }
+}
